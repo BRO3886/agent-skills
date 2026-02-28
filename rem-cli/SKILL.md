@@ -1,9 +1,9 @@
 ---
-name: rem-cli
+name: rem
 description: Manages macOS Reminders from the terminal using the rem CLI. Creates, lists, updates, completes, deletes, searches, and exports reminders and lists. Supports natural language due dates, filtering, import/export, and multiple output formats. Use when the user wants to interact with Apple Reminders via command line, automate reminder workflows, or build scripts around macOS Reminders.
 metadata:
-  author: sidv
-  version: "1.0"
+  author: BRO3886
+  version: "0.7.0"
 compatibility: Requires macOS with Reminders.app. Requires Xcode Command Line Tools for building from source.
 ---
 
@@ -14,14 +14,21 @@ A Go CLI that wraps macOS Reminders. Sub-200ms reads via cgo + EventKit. Single 
 ## Installation
 
 ```bash
+# macOS (recommended)
+curl -fsSL https://rem.sidv.dev/install | bash
+
+# Or via Go
 go install github.com/BRO3886/rem/cmd/rem@latest
 ```
 
-Or build from source:
+Install this skill into your agent:
 
 ```bash
-git clone <repo-url> && cd rem
-make build    # produces bin/rem
+# Claude Code or Codex
+rem skills install
+
+# OpenClaw
+rem skills install --agent openclaw
 ```
 
 ## Quick Start

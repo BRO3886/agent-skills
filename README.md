@@ -14,6 +14,11 @@ Manage macOS Calendar events and calendars from the terminal. Full CRUD for even
 
 Source: [github.com/BRO3886/ical](https://github.com/BRO3886/ical)
 
+### gtasks-cli
+Manage Google Tasks from the command line. View, create, update, delete tasks and task lists. Supports sorting, filtering, flexible date parsing, and multiple output formats (table, JSON, CSV). Requires Google OAuth2 credentials.
+
+Source: [github.com/BRO3886/gtasks](https://github.com/BRO3886/gtasks)
+
 ### healthsync
 Query Apple Health data stored in a local SQLite database. Read heart rate, steps, SpO2, VO2 Max, sleep, workouts, HRV, blood pressure, body metrics, and more. Read-only — never writes to the database.
 
